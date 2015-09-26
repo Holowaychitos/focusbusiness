@@ -1,3 +1,16 @@
+@import '../variables';
+
+.cf {
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
 .content {
   max-width: @site-width;
   margin: 0 auto;
