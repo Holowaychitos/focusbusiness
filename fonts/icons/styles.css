@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "jbfont";
+  src:url("fonts/jbfont.eot");
+  src:url("fonts/jbfont.eot?#iefix") format("embedded-opentype"),
+    url("fonts/jbfont.woff") format("woff"),
+    url("fonts/jbfont.ttf") format("truetype"),
+    url("fonts/jbfont.svg#jbfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "jbfont" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "jbfont" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "a";
+}
+.icon-github:before {
+  content: "b";
+}
+.icon-linkedin:before {
+  content: "c";
+}
+.icon-dribbble:before {
+  content: "e";
+}
+.icon-star:before {
+  content: "d";
+}
+.icon-fork:before {
+  content: "f";
+}
+.icon-heart:before {
+  content: "g";
+}
