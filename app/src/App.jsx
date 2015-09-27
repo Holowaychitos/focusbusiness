@@ -6,7 +6,11 @@ var injectTapEventPlugin = require('react-tap-event-plugin')
 injectTapEventPlugin()
 
 if (window.mixpanel) {
-  console.info('Mixpanel is working')
+  console.info('Mixpanel is working with debug')
+  window.mixpanel.init('7396d99c06e91c5688853ad0b98d5876', {
+    debug: true
+  })
+
   window.mixpanel.track('pageview')
   window.mixpanel.track('register-first')
 }
@@ -20,11 +24,11 @@ const RaisedButton = require('material-ui/lib/raised-button')
 const AppBar = require('material-ui/lib/app-bar')
 const Paper = require('material-ui/lib/paper')
 // const Checkbox = require('material-ui/lib/checkbox')
-const Toolbar = require('material-ui/lib/toolbar/toolbar')
-const ToolbarGroup = require('material-ui/lib/toolbar/toolbar-group')
+// const Toolbar = require('material-ui/lib/toolbar/toolbar')
+// const ToolbarGroup = require('material-ui/lib/toolbar/toolbar-group')
 // const ToolbarTitle = require('material-ui/lib/toolbar/toolbar-title')
-const ToolbarSeparator = require('material-ui/lib/toolbar/toolbar-separator')
-const DropDownMenu = require('material-ui/lib/drop-down-menu')
+// const ToolbarSeparator = require('material-ui/lib/toolbar/toolbar-separator')
+// const DropDownMenu = require('material-ui/lib/drop-down-menu')
 // const LeftNav = require('material-ui/lib/left-nav')
 
 // const FontIcon = require('material-ui/lib/font-icon')
@@ -33,7 +37,7 @@ const TextField = require('material-ui/lib/text-field')
 const SelectField = require('material-ui/lib/select-field')
 
 const MenuItem = require('material-ui/lib/menu/menu-item')
-const MenuDivider = require('material-ui/lib/menus/menu-divider')
+// const MenuDivider = require('material-ui/lib/menus/menu-divider')
 
 const Table = require('material-ui/lib/table/table')
 const TableRow = require('material-ui/lib/table/table-row')
