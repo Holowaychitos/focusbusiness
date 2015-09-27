@@ -85,15 +85,16 @@ var termOptions = [
   { payload: 6, text: '6 meses' },
   { payload: 12, text: '12 meses' },
   { payload: 24, text: '24 meses' },
-  { payload: 36, text: '36 meses' }
+  { payload: 36, text: '36 meses' },
+  { payload: 60, text: '5 años' }
 ]
 
 var outcomeOptions = [
   { payload: '0.3', text: 'Excelente' },
   { payload: '0.15', text: 'Bueno' },
   { payload: '0', text: 'Promedio' },
-  { payload: '-0.15', text: 'Malo' },
-  { payload: '-0.3', text: 'Pésimo' }
+  { payload: '-0.05', text: 'Malo' },
+  { payload: '-0.15', text: 'Pésimo' }
 ]
 
 function toMoney (val) {
@@ -161,7 +162,7 @@ export const App = React.createClass({
       <AppBar
         title='Focus Business' />
 
-      <div className='flex-1 wrapper flex'>
+      <div className='flex-1 flex'>
           <Paper zDepth={1} className='on-top'>
             <MenuItem key={0}>
               <TextField
@@ -186,7 +187,7 @@ export const App = React.createClass({
             </MenuItem>
           </Paper>
 
-          <div className='wrapper flex-1 flex flex-direction-column'>
+          <div className='flex-1 flex flex-direction-column'>
 
           <div className='main'>
             <div>
