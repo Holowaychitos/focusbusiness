@@ -1,23 +1,375 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'dist' ]
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'react-chartjs' ]
 2 info using npm@2.14.4
 3 info using node@v4.1.1
-4 verbose stack Error: missing script: dist
-4 verbose stack     at run (/usr/local/lib/node_modules/npm/lib/run-script.js:142:19)
-4 verbose stack     at /usr/local/lib/node_modules/npm/lib/run-script.js:58:5
-4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:345:5
-4 verbose stack     at checkBinReferences_ (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:309:45)
-4 verbose stack     at final (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:343:3)
-4 verbose stack     at then (/usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:113:5)
-4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-package-json/read-json.js:232:12
-4 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/graceful-fs.js:76:16
-4 verbose stack     at FSReqWrap.readFileAfterClose [as oncomplete] (fs.js:380:3)
-5 verbose cwd /Users/javierbyte/Projects/focusbusiness/app
-6 error Darwin 15.0.0
-7 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "dist"
-8 error node v4.1.1
-9 error npm  v2.14.4
-10 error missing script: dist
-11 error If you need help, you may report this error at:
-11 error     <https://github.com/npm/npm/issues>
-12 verbose exit [ 1, true ]
+4 verbose install initial load of /Users/javierbyte/Projects/focusbusiness/app/package.json
+5 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/babel-core/package.json
+6 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/babel-loader/package.json
+7 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/fbjs/package.json
+8 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/lodash/package.json
+9 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/material-ui/package.json
+10 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react/package.json
+11 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-dom/package.json
+12 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-hot-loader/package.json
+13 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-tap-event-plugin/package.json
+14 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/standard/package.json
+15 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/webpack/package.json
+16 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/webpack-dev-server/package.json
+17 info package.json react-tap-event-plugin@0.1.8 No license field.
+18 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/package.json
+19 silly cache add args [ 'react-chartjs', null ]
+20 verbose cache add spec react-chartjs
+21 silly cache add parsed spec Result {
+21 silly cache add   raw: 'react-chartjs',
+21 silly cache add   scope: null,
+21 silly cache add   name: 'react-chartjs',
+21 silly cache add   rawSpec: '',
+21 silly cache add   spec: '*',
+21 silly cache add   type: 'range' }
+22 silly addNamed react-chartjs@*
+23 verbose addNamed "*" is a valid semver range for react-chartjs
+24 silly addNameRange { name: 'react-chartjs', range: '*', hasData: false }
+25 silly mapToRegistry name react-chartjs
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry uri https://registry.npmjs.org/react-chartjs
+29 verbose addNameRange registry:https://registry.npmjs.org/react-chartjs not in flight; fetching
+30 verbose request uri https://registry.npmjs.org/react-chartjs
+31 verbose request no auth needed
+32 info attempt registry request try #1 at 11:06:30 AM
+33 verbose request using bearer token for auth
+34 verbose request id 85579aff3ea4c61e
+35 http request GET https://registry.npmjs.org/react-chartjs
+36 http 200 https://registry.npmjs.org/react-chartjs
+37 silly get cb [ 200,
+37 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+37 silly get     etag: '"9Y2ARZRT5NYWTRFGL9NOSN9DE"',
+37 silly get     'content-type': 'application/json',
+37 silly get     'cache-control': 'max-age=60',
+37 silly get     'content-length': '14166',
+37 silly get     'accept-ranges': 'bytes',
+37 silly get     date: 'Sun, 27 Sep 2015 16:06:31 GMT',
+37 silly get     via: '1.1 varnish',
+37 silly get     connection: 'keep-alive',
+37 silly get     'x-served-by': 'cache-lax1426-LAX',
+37 silly get     'x-cache': 'MISS',
+37 silly get     'x-cache-hits': '0',
+37 silly get     'x-timer': 'S1443369991.155869,VS0,VE185',
+37 silly get     vary: 'Accept' } ]
+38 verbose get saving react-chartjs to /Users/javierbyte/.npm/registry.npmjs.org/react-chartjs/.cache.json
+39 silly addNameRange number 2 { name: 'react-chartjs', range: '*', hasData: true }
+40 silly addNameRange versions [ 'react-chartjs',
+40 silly addNameRange   [ '0.0.1',
+40 silly addNameRange     '0.1.0',
+40 silly addNameRange     '0.1.1',
+40 silly addNameRange     '0.1.2',
+40 silly addNameRange     '0.1.3',
+40 silly addNameRange     '0.2.0',
+40 silly addNameRange     '0.2.1',
+40 silly addNameRange     '0.3.0',
+40 silly addNameRange     '0.4.0',
+40 silly addNameRange     '0.5.0',
+40 silly addNameRange     '0.6.0' ] ]
+41 silly addNamed react-chartjs@0.6.0
+42 verbose addNamed "0.6.0" is a plain semver version for react-chartjs
+43 silly mapToRegistry name react-chartjs
+44 silly mapToRegistry using default registry
+45 silly mapToRegistry registry https://registry.npmjs.org/
+46 silly mapToRegistry uri https://registry.npmjs.org/react-chartjs
+47 verbose addRemoteTarball https://registry.npmjs.org/react-chartjs/-/react-chartjs-0.6.0.tgz not in flight; adding
+48 verbose addRemoteTarball [ 'https://registry.npmjs.org/react-chartjs/-/react-chartjs-0.6.0.tgz',
+48 verbose addRemoteTarball   '5ff013b4d11b441ac3a16057e66489d6b12477e6' ]
+49 info retry fetch attempt 1 at 11:06:31 AM
+50 info attempt registry request try #1 at 11:06:31 AM
+51 http fetch GET https://registry.npmjs.org/react-chartjs/-/react-chartjs-0.6.0.tgz
+52 verbose request using bearer token for auth
+53 http fetch 200 https://registry.npmjs.org/react-chartjs/-/react-chartjs-0.6.0.tgz
+54 silly fetchAndShaCheck shasum 5ff013b4d11b441ac3a16057e66489d6b12477e6
+55 verbose addTmpTarball /var/folders/lz/fpr4f4_10vxbw54v1h53wl540000gn/T/npm-22899-f00d560c/registry.npmjs.org/react-chartjs/-/react-chartjs-0.6.0.tgz not in flight; adding
+56 verbose addTmpTarball already have metadata; skipping unpack for react-chartjs@0.6.0
+57 silly cache afterAdd react-chartjs@0.6.0
+58 verbose afterAdd /Users/javierbyte/.npm/react-chartjs/0.6.0/package/package.json not in flight; writing
+59 verbose afterAdd /Users/javierbyte/.npm/react-chartjs/0.6.0/package/package.json written
+60 silly install resolved [ { name: 'react-chartjs',
+60 silly install resolved     version: '0.6.0',
+60 silly install resolved     description: 'react charting components using the chartjs lib',
+60 silly install resolved     main: 'index.js',
+60 silly install resolved     scripts: { test: 'mocha' },
+60 silly install resolved     repository:
+60 silly install resolved      { type: 'git',
+60 silly install resolved        url: 'https://github.com/jhudson8/react-chartjs' },
+60 silly install resolved     keywords:
+60 silly install resolved      [ 'react',
+60 silly install resolved        'react-component',
+60 silly install resolved        'chart',
+60 silly install resolved        'charts',
+60 silly install resolved        'graph',
+60 silly install resolved        'chartjs' ],
+60 silly install resolved     author: { name: 'Joe Hudson' },
+60 silly install resolved     license: 'MIT',
+60 silly install resolved     bugs: { url: 'https://github.com/jhudson8/react-chartjs/issues' },
+60 silly install resolved     homepage: 'https://github.com/jhudson8/react-chartjs',
+60 silly install resolved     peerDependencies: { react: '*', 'chart.js': '*' },
+60 silly install resolved     devDependencies: { 'uglify-js': '^2.4.16', webpack: '^1.4.14' },
+60 silly install resolved     gitHead: '5806d209c714637bf8372762b0f3f5a6d63d5975',
+60 silly install resolved     _id: 'react-chartjs@0.6.0',
+60 silly install resolved     _shasum: '5ff013b4d11b441ac3a16057e66489d6b12477e6',
+60 silly install resolved     _from: 'react-chartjs@*',
+60 silly install resolved     _npmVersion: '2.2.0',
+60 silly install resolved     _nodeVersion: '0.10.35',
+60 silly install resolved     _npmUser: { name: 'jhudson', email: 'joehud@gmail.com' },
+60 silly install resolved     maintainers: [ [Object] ],
+60 silly install resolved     dist:
+60 silly install resolved      { shasum: '5ff013b4d11b441ac3a16057e66489d6b12477e6',
+60 silly install resolved        tarball: 'http://registry.npmjs.org/react-chartjs/-/react-chartjs-0.6.0.tgz' },
+60 silly install resolved     directories: {},
+60 silly install resolved     _resolved: 'https://registry.npmjs.org/react-chartjs/-/react-chartjs-0.6.0.tgz' } ]
+61 info install react-chartjs@0.6.0 into /Users/javierbyte/Projects/focusbusiness/app
+62 info installOne react-chartjs@0.6.0
+63 verbose installOne of react-chartjs to /Users/javierbyte/Projects/focusbusiness/app not in flight; installing
+64 verbose lock using /Users/javierbyte/.npm/_locks/react-chartjs-8c1215ebf4052eee.lock for /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+65 silly install write writing react-chartjs 0.6.0 to /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+66 verbose unbuild node_modules/react-chartjs
+67 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs is being purged from base /Users/javierbyte/Projects/focusbusiness/app
+68 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+69 verbose tar unpack /Users/javierbyte/.npm/react-chartjs/0.6.0/package.tgz
+70 verbose tar unpacking to /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+71 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs is being purged
+72 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+73 silly gunzTarPerm modes [ '755', '644' ]
+74 silly gunzTarPerm extractEntry package.json
+75 silly gunzTarPerm extractEntry .npmignore
+76 silly gunzTarPerm extractEntry README.md
+77 silly gunzTarPerm extractEntry LICENSE
+78 silly gunzTarPerm extractEntry index.js
+79 silly gunzTarPerm extractEntry lib/bar.js
+80 silly gunzTarPerm extractEntry lib/core.js
+81 silly gunzTarPerm extractEntry lib/doughnut.js
+82 silly gunzTarPerm extractEntry lib/line.js
+83 silly gunzTarPerm extractEntry lib/pie.js
+84 silly gunzTarPerm extractEntry lib/polar-area.js
+85 silly gunzTarPerm extractEntry lib/radar.js
+86 silly gunzTarPerm extractEntry release-notes.md
+87 verbose write writing to /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs/package.json
+88 info preinstall react-chartjs@0.6.0
+89 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs/package.json
+90 silly prepareForInstallMany adding react@* from react-chartjs peerDependencies
+91 silly prepareForInstallMany adding chart.js@* from react-chartjs peerDependencies
+92 warn peerDependencies The peer dependency react@* included from react-chartjs will no
+93 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+94 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+95 warn peerDependencies The peer dependency chart.js@* included from react-chartjs will no
+96 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+97 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+98 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs/package.json
+99 silly install resolved []
+100 verbose about to build /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+101 info build /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+102 info linkStuff react-chartjs@0.6.0
+103 silly linkStuff react-chartjs@0.6.0 has /Users/javierbyte/Projects/focusbusiness/app/node_modules as its parent node_modules
+104 verbose linkBins react-chartjs@0.6.0
+105 verbose linkMans react-chartjs@0.6.0
+106 verbose rebuildBundles react-chartjs@0.6.0
+107 info install react-chartjs@0.6.0
+108 info postinstall react-chartjs@0.6.0
+109 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/package.json
+110 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/babel-core/package.json
+111 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/babel-loader/package.json
+112 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/fbjs/package.json
+113 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/lodash/package.json
+114 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/material-ui/package.json
+115 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react/package.json
+116 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs/package.json
+117 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-dom/package.json
+118 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-hot-loader/package.json
+119 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-tap-event-plugin/package.json
+120 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/standard/package.json
+121 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/webpack/package.json
+122 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/webpack-dev-server/package.json
+123 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/.bin/standard/package.json
+124 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/.bin/webpack/package.json
+125 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/.bin/webpack-dev-server/package.json
+126 verbose already installed skipping react@* /Users/javierbyte/Projects/focusbusiness/app
+127 silly cache add args [ 'chart.js@*', null ]
+128 verbose cache add spec chart.js@*
+129 silly cache add parsed spec Result {
+129 silly cache add   raw: 'chart.js@*',
+129 silly cache add   scope: null,
+129 silly cache add   name: 'chart.js',
+129 silly cache add   rawSpec: '*',
+129 silly cache add   spec: '*',
+129 silly cache add   type: 'range' }
+130 silly addNamed chart.js@*
+131 verbose addNamed "*" is a valid semver range for chart.js
+132 silly addNameRange { name: 'chart.js', range: '*', hasData: false }
+133 silly mapToRegistry name chart.js
+134 silly mapToRegistry using default registry
+135 silly mapToRegistry registry https://registry.npmjs.org/
+136 silly mapToRegistry uri https://registry.npmjs.org/chart.js
+137 verbose addNameRange registry:https://registry.npmjs.org/chart.js not in flight; fetching
+138 verbose request uri https://registry.npmjs.org/chart.js
+139 verbose request no auth needed
+140 info attempt registry request try #1 at 11:06:32 AM
+141 verbose request using bearer token for auth
+142 http request GET https://registry.npmjs.org/chart.js
+143 http 200 https://registry.npmjs.org/chart.js
+144 silly get cb [ 200,
+144 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+144 silly get     etag: '"AHR75JAAFDM3ARBDP0S8NKL2X"',
+144 silly get     'content-type': 'application/json',
+144 silly get     'cache-control': 'max-age=60',
+144 silly get     'content-length': '4916',
+144 silly get     'accept-ranges': 'bytes',
+144 silly get     date: 'Sun, 27 Sep 2015 16:06:32 GMT',
+144 silly get     via: '1.1 varnish',
+144 silly get     connection: 'keep-alive',
+144 silly get     'x-served-by': 'cache-lax1428-LAX',
+144 silly get     'x-cache': 'MISS',
+144 silly get     'x-cache-hits': '0',
+144 silly get     'x-timer': 'S1443369992.164634,VS0,VE197',
+144 silly get     vary: 'Accept' } ]
+145 verbose get saving chart.js to /Users/javierbyte/.npm/registry.npmjs.org/chart.js/.cache.json
+146 silly addNameRange number 2 { name: 'chart.js', range: '*', hasData: true }
+147 silly addNameRange versions [ 'chart.js', [ '1.0.1-beta.2', '1.0.1', '1.0.2' ] ]
+148 silly addNamed chart.js@1.0.2
+149 verbose addNamed "1.0.2" is a plain semver version for chart.js
+150 silly mapToRegistry name chart.js
+151 silly mapToRegistry using default registry
+152 silly mapToRegistry registry https://registry.npmjs.org/
+153 silly mapToRegistry uri https://registry.npmjs.org/chart.js
+154 verbose addRemoteTarball https://registry.npmjs.org/chart.js/-/chart.js-1.0.2.tgz not in flight; adding
+155 verbose addRemoteTarball [ 'https://registry.npmjs.org/chart.js/-/chart.js-1.0.2.tgz',
+155 verbose addRemoteTarball   'ad57d2229cfd8ccf5955147e8121b4911e69dfe7' ]
+156 info retry fetch attempt 1 at 11:06:32 AM
+157 info attempt registry request try #1 at 11:06:32 AM
+158 http fetch GET https://registry.npmjs.org/chart.js/-/chart.js-1.0.2.tgz
+159 verbose request using bearer token for auth
+160 http fetch 200 https://registry.npmjs.org/chart.js/-/chart.js-1.0.2.tgz
+161 silly fetchAndShaCheck shasum ad57d2229cfd8ccf5955147e8121b4911e69dfe7
+162 verbose addTmpTarball /var/folders/lz/fpr4f4_10vxbw54v1h53wl540000gn/T/npm-22899-f00d560c/registry.npmjs.org/chart.js/-/chart.js-1.0.2.tgz not in flight; adding
+163 verbose addTmpTarball already have metadata; skipping unpack for chart.js@1.0.2
+164 silly cache afterAdd chart.js@1.0.2
+165 verbose afterAdd /Users/javierbyte/.npm/chart.js/1.0.2/package/package.json not in flight; writing
+166 verbose afterAdd /Users/javierbyte/.npm/chart.js/1.0.2/package/package.json written
+167 silly install resolved [ { name: 'chart.js',
+167 silly install resolved     homepage: 'http://www.chartjs.org',
+167 silly install resolved     description: 'Simple HTML5 charts using the canvas element.',
+167 silly install resolved     version: '1.0.2',
+167 silly install resolved     main: 'Chart.js',
+167 silly install resolved     repository: { type: 'git', url: 'https://github.com/nnnick/Chart.js.git' },
+167 silly install resolved     dependences: {},
+167 silly install resolved     devDependencies:
+167 silly install resolved      { gulp: '3.5.x',
+167 silly install resolved        'gulp-concat': '~2.1.x',
+167 silly install resolved        'gulp-connect': '~2.0.5',
+167 silly install resolved        'gulp-jshint': '~1.5.1',
+167 silly install resolved        'gulp-replace': '^0.4.0',
+167 silly install resolved        'gulp-size': '~0.4.0',
+167 silly install resolved        'gulp-uglify': '~0.2.x',
+167 silly install resolved        'gulp-util': '~2.2.x',
+167 silly install resolved        'gulp-html-validator': '^0.0.2',
+167 silly install resolved        inquirer: '^0.5.1',
+167 silly install resolved        semver: '^3.0.1' },
+167 silly install resolved     spm: { main: 'Chart.js' },
+167 silly install resolved     gitHead: '930b16a0af59201dcfcd1594b0e7540db4d04c9f',
+167 silly install resolved     bugs: { url: 'https://github.com/nnnick/Chart.js/issues' },
+167 silly install resolved     _id: 'chart.js@1.0.2',
+167 silly install resolved     scripts: {},
+167 silly install resolved     _shasum: 'ad57d2229cfd8ccf5955147e8121b4911e69dfe7',
+167 silly install resolved     _from: 'chart.js@*',
+167 silly install resolved     _npmVersion: '1.4.20',
+167 silly install resolved     _npmUser: { name: 'nnnick', email: 'hello@nickdownie.com' },
+167 silly install resolved     maintainers: [ [Object] ],
+167 silly install resolved     dist:
+167 silly install resolved      { shasum: 'ad57d2229cfd8ccf5955147e8121b4911e69dfe7',
+167 silly install resolved        tarball: 'http://registry.npmjs.org/chart.js/-/chart.js-1.0.2.tgz' },
+167 silly install resolved     directories: {},
+167 silly install resolved     _resolved: 'https://registry.npmjs.org/chart.js/-/chart.js-1.0.2.tgz' } ]
+168 info install chart.js@1.0.2 into /Users/javierbyte/Projects/focusbusiness/app
+169 info installOne chart.js@1.0.2
+170 verbose installOne of chart.js to /Users/javierbyte/Projects/focusbusiness/app not in flight; installing
+171 verbose lock using /Users/javierbyte/.npm/_locks/chart-js-b7fcb955f1a1d0c6.lock for /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+172 silly install write writing chart.js 1.0.2 to /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+173 verbose unbuild node_modules/chart.js
+174 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js is being purged from base /Users/javierbyte/Projects/focusbusiness/app
+175 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+176 verbose tar unpack /Users/javierbyte/.npm/chart.js/1.0.2/package.tgz
+177 verbose tar unpacking to /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+178 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js is being purged
+179 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+180 silly gunzTarPerm modes [ '755', '644' ]
+181 silly gunzTarPerm extractEntry package.json
+182 silly gunzTarPerm extractEntry .npmignore
+183 silly gunzTarPerm extractEntry README.md
+184 silly gunzTarPerm extractEntry Chart.js
+185 silly gunzTarPerm extractEntry Chart.min.js
+186 silly gunzTarPerm extractEntry gulpfile.js
+187 silly gunzTarPerm extractEntry src/Chart.Bar.js
+188 silly gunzTarPerm extractEntry src/Chart.Core.js
+189 silly gunzTarPerm extractEntry src/Chart.Doughnut.js
+190 silly gunzTarPerm extractEntry src/Chart.Line.js
+191 silly gunzTarPerm extractEntry src/Chart.PolarArea.js
+192 silly gunzTarPerm extractEntry src/Chart.Radar.js
+193 silly gunzTarPerm extractEntry .travis.yml
+194 silly gunzTarPerm extractEntry docs/00-Getting-Started.md
+195 silly gunzTarPerm extractEntry docs/01-Line-Chart.md
+196 silly gunzTarPerm extractEntry docs/02-Bar-Chart.md
+197 silly gunzTarPerm extractEntry docs/03-Radar-Chart.md
+198 silly gunzTarPerm extractEntry docs/04-Polar-Area-Chart.md
+199 silly gunzTarPerm extractEntry docs/05-Pie-Doughnut-Chart.md
+200 silly gunzTarPerm extractEntry docs/06-Advanced.md
+201 silly gunzTarPerm extractEntry docs/07-Notes.md
+202 silly gunzTarPerm extractEntry CONTRIBUTING.md
+203 silly gunzTarPerm extractEntry samples/bar.html
+204 silly gunzTarPerm extractEntry samples/doughnut.html
+205 silly gunzTarPerm extractEntry samples/line-customTooltips.html
+206 silly gunzTarPerm extractEntry samples/line.html
+207 silly gunzTarPerm extractEntry samples/pie-customTooltips.html
+208 silly gunzTarPerm extractEntry samples/pie.html
+209 silly gunzTarPerm extractEntry samples/polar-area.html
+210 silly gunzTarPerm extractEntry samples/radar.html
+211 silly gunzTarPerm extractEntry LICENSE.md
+212 silly gunzTarPerm extractEntry bower.json
+213 verbose write writing to /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js/package.json
+214 info preinstall chart.js@1.0.2
+215 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js/package.json
+216 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js/package.json
+217 silly install resolved []
+218 verbose about to build /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+219 info build /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+220 info linkStuff chart.js@1.0.2
+221 silly linkStuff chart.js@1.0.2 has /Users/javierbyte/Projects/focusbusiness/app/node_modules as its parent node_modules
+222 verbose linkBins chart.js@1.0.2
+223 verbose linkMans chart.js@1.0.2
+224 verbose rebuildBundles chart.js@1.0.2
+225 info install chart.js@1.0.2
+226 info postinstall chart.js@1.0.2
+227 verbose unlock done using /Users/javierbyte/.npm/_locks/chart-js-b7fcb955f1a1d0c6.lock for /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+228 verbose unlock done using /Users/javierbyte/.npm/_locks/react-chartjs-8c1215ebf4052eee.lock for /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+229 verbose validateInstall loading /Users/javierbyte/Projects/focusbusiness/app/package.json for validation
+230 verbose stack Error: The package react@0.14.0-rc1 does not satisfy its siblings' peerDependencies requirements!
+230 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+230 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+230 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+230 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+230 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+230 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+230 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+230 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+230 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+230 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+231 verbose cwd /Users/javierbyte/Projects/focusbusiness/app
+232 error Darwin 15.0.0
+233 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "react-chartjs"
+234 error node v4.1.1
+235 error npm  v2.14.4
+236 error code EPEERINVALID
+237 error peerinvalid The package react@0.14.0-rc1 does not satisfy its siblings' peerDependencies requirements!
+237 error peerinvalid Peer material-ui@0.12.0 wants react@>=0.13
+237 error peerinvalid Peer react-tap-event-plugin@0.1.8 wants react@^0.14.0-0 || ~0.13.x || ~0.12.x
+237 error peerinvalid Peer react-chartjs@0.6.0 wants react@*
+238 verbose exit [ 1, true ]
