@@ -51,12 +51,13 @@ const tableConfig = {
 }
 
 var tableData = [{
-  name: 'Santander',
-  performancePercent: 4,
-  minAmount: 1000,
+  name: 'HSBC',
+  performancePercent: 3.25,
+  minAmount: 10000,
   minTerm: 7,
   risk: 0.3,
-  category: 'Banco'
+  category: 'Banco',
+  source: 'http://www.hsbc.com.mx/1/2/es/hsbc-premier/productos/inversiones-plazo/simulador-plazo'
 }, {
   name: 'Uber',
   performancePercent: 9,
@@ -66,18 +67,20 @@ var tableData = [{
   category: 'Alto riesgo'
 }, {
   name: 'Yotepresto',
-  performancePercent: 7,
+  performancePercent: 10.5,
   minAmount: 1000,
   minTerm: 6,
   risk: 0.65,
-  category: 'Prestamos'
+  category: 'Prestamos',
+  source: 'https://www.yotepresto.com/es/quiero-prestar?id=4'
 }, {
   name: 'CETES',
-  performancePercent: 3,
+  performancePercent: 3.71,
   minAmount: 1000,
   minTerm: 6,
   risk: 0.08,
-  category: 'Prestamos'
+  category: 'Prestamos',
+  source: 'http://www.cetesdirecto.com/servlet/cetes/productos'
 }]
 
 var termOptions = [
@@ -116,6 +119,13 @@ function getResults (amount, performance, term, risk, outcome) {
   return (amount * Math.pow((performance / 100 + 1), term / 12)) * riskFactor * riskVariation
 }
 
+function getParameterByName (name) {
+  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]')
+  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)')
+  var results = regex.exec(window.location.search)
+  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '))
+}
+
 function getRiskLabel (risk) {
   if (risk < 0.33) return 'Bajo'
   if (risk < 0.66) return 'Medio'
@@ -126,7 +136,7 @@ export const App = React.createClass({
 
   getInitialState () {
     return {
-      investAmount: 5000,
+      investAmount: getParameterByName('amount') ? parseInt(getParameterByName('amount'), 10) : 5000,
       investTerm: 6,
       outcome: '0'
     }
@@ -164,21 +174,21 @@ export const App = React.createClass({
 
       <div className='flex-1 flex'>
           <Paper zDepth={1} className='on-top'>
-            <MenuItem key={0}>
+            <MenuItem index={0}>
               <TextField
                 hintText='Dinero a invertir'
                 floatingLabelText='¿Cuánto dinero quieres invertir?'
                 value={investAmount}
                 onChange={this.onChangeInvestAmount} />
             </MenuItem>
-            <MenuItem key={1}>
+            <MenuItem index={1}>
               <SelectField
                 floatingLabelText='¿Por cuánto tiempo?'
                 menuItems={termOptions}
                 value={investTerm}
                 onChange={this.onChangeTerm} />
             </MenuItem>
-            <MenuItem key={3}>
+            <MenuItem index={3}>
               <SelectField
                 floatingLabelText='Proyección'
                 menuItems={outcomeOptions}
@@ -199,11 +209,12 @@ export const App = React.createClass({
                 onRowSelection={this._onRowSelection}>
                 <TableHeader enableSelectAll={tableConfig.enableSelectAll}>
                   <TableRow>
-                    <TableHeaderColumn>Nombre</TableHeaderColumn>
-                    <TableHeaderColumn>Rendimiento</TableHeaderColumn>
-                    <TableHeaderColumn>Riesgo</TableHeaderColumn>
-                    <TableHeaderColumn>Expected</TableHeaderColumn>
-                    <TableHeaderColumn />
+                    <TableHeaderColumn key={0}>Nombre</TableHeaderColumn>
+                    <TableHeaderColumn key={1}>Rendimiento</TableHeaderColumn>
+                    <TableHeaderColumn key={2}>Riesgo</TableHeaderColumn>
+                    <TableHeaderColumn key={3}>Expected</TableHeaderColumn>
+                    <TableHeaderColumn key={4}>Fuente</TableHeaderColumn>
+                    <TableHeaderColumn key={5} />
                   </TableRow>
                 </TableHeader>
                 <TableBody
@@ -222,6 +233,9 @@ export const App = React.createClass({
                         <TableRowColumn>{(() => {
                           return toMoney(profits) + ' (' + (profits / investAmount * 100 - 100).toFixed(2) + '%)'
                         })()}
+                        </TableRowColumn>
+                        <TableRowColumn>
+                          {el.source && <a href={el.source}>Ver fuente</a>}
                         </TableRowColumn>
                         <TableRowColumn>
                           <RaisedButton label='Me interesa' />

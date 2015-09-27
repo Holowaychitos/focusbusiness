@@ -28227,12 +28227,13 @@
 	};
 	
 	var tableData = [{
-	  name: 'Santander',
-	  performancePercent: 4,
-	  minAmount: 1000,
+	  name: 'HSBC',
+	  performancePercent: 3.25,
+	  minAmount: 10000,
 	  minTerm: 7,
 	  risk: 0.3,
-	  category: 'Banco'
+	  category: 'Banco',
+	  source: 'http://www.hsbc.com.mx/1/2/es/hsbc-premier/productos/inversiones-plazo/simulador-plazo'
 	}, {
 	  name: 'Uber',
 	  performancePercent: 9,
@@ -28242,23 +28243,25 @@
 	  category: 'Alto riesgo'
 	}, {
 	  name: 'Yotepresto',
-	  performancePercent: 7,
+	  performancePercent: 10.5,
 	  minAmount: 1000,
 	  minTerm: 6,
 	  risk: 0.65,
-	  category: 'Prestamos'
+	  category: 'Prestamos',
+	  source: 'https://www.yotepresto.com/es/quiero-prestar?id=4'
 	}, {
 	  name: 'CETES',
-	  performancePercent: 3,
+	  performancePercent: 3.71,
 	  minAmount: 1000,
 	  minTerm: 6,
 	  risk: 0.08,
-	  category: 'Prestamos'
+	  category: 'Prestamos',
+	  source: 'http://www.cetesdirecto.com/servlet/cetes/productos'
 	}];
 	
-	var termOptions = [{ payload: 3, text: '3 meses' }, { payload: 6, text: '6 meses' }, { payload: 12, text: '12 meses' }, { payload: 24, text: '24 meses' }, { payload: 36, text: '36 meses' }];
+	var termOptions = [{ payload: 3, text: '3 meses' }, { payload: 6, text: '6 meses' }, { payload: 12, text: '12 meses' }, { payload: 24, text: '24 meses' }, { payload: 36, text: '36 meses' }, { payload: 60, text: '5 años' }];
 	
-	var outcomeOptions = [{ payload: '0.3', text: 'Excelente' }, { payload: '0.15', text: 'Bueno' }, { payload: '0', text: 'Promedio' }, { payload: '-0.15', text: 'Malo' }, { payload: '-0.3', text: 'Pésimo' }];
+	var outcomeOptions = [{ payload: '0.3', text: 'Excelente' }, { payload: '0.15', text: 'Bueno' }, { payload: '0', text: 'Promedio' }, { payload: '-0.05', text: 'Malo' }, { payload: '-0.15', text: 'Pésimo' }];
 	
 	function toMoney(val) {
 	  return '$' + val.toFixed(2).toLocaleString('es-MX', {
@@ -28279,6 +28282,13 @@
 	  return amount * Math.pow(performance / 100 + 1, term / 12) * riskFactor * riskVariation;
 	}
 	
+	function getParameterByName(name) {
+	  name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+	  var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+	  var results = regex.exec(window.location.search);
+	  return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+	}
+	
 	function getRiskLabel(risk) {
 	  if (risk < 0.33) return 'Bajo';
 	  if (risk < 0.66) return 'Medio';
@@ -28290,7 +28300,7 @@
 	
 	  getInitialState: function getInitialState() {
 	    return {
-	      investAmount: 5000,
+	      investAmount: getParameterByName('amount') ? parseInt(getParameterByName('amount'), 10) : 5000,
 	      investTerm: 6,
 	      outcome: '0'
 	    };
@@ -28328,13 +28338,13 @@
 	        title: 'Focus Business' }),
 	      _react2['default'].createElement(
 	        'div',
-	        { className: 'flex-1 wrapper flex' },
+	        { className: 'flex-1 flex' },
 	        _react2['default'].createElement(
 	          Paper,
 	          { zDepth: 1, className: 'on-top' },
 	          _react2['default'].createElement(
 	            MenuItem,
-	            { key: 0 },
+	            { index: 0 },
 	            _react2['default'].createElement(TextField, {
 	              hintText: 'Dinero a invertir',
 	              floatingLabelText: '¿Cuánto dinero quieres invertir?',
@@ -28343,7 +28353,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            MenuItem,
-	            { key: 1 },
+	            { index: 1 },
 	            _react2['default'].createElement(SelectField, {
 	              floatingLabelText: '¿Por cuánto tiempo?',
 	              menuItems: termOptions,
@@ -28352,7 +28362,7 @@
 	          ),
 	          _react2['default'].createElement(
 	            MenuItem,
-	            { key: 3 },
+	            { index: 3 },
 	            _react2['default'].createElement(SelectField, {
 	              floatingLabelText: 'Proyección',
 	              menuItems: outcomeOptions,
@@ -28362,7 +28372,7 @@
 	        ),
 	        _react2['default'].createElement(
 	          'div',
-	          { className: 'wrapper flex-1 flex flex-direction-column' },
+	          { className: 'flex-1 flex flex-direction-column' },
 	          _react2['default'].createElement(
 	            'div',
 	            { className: 'main' },
@@ -28385,25 +28395,30 @@
 	                    null,
 	                    _react2['default'].createElement(
 	                      TableHeaderColumn,
-	                      null,
+	                      { key: 0 },
 	                      'Nombre'
 	                    ),
 	                    _react2['default'].createElement(
 	                      TableHeaderColumn,
-	                      null,
+	                      { key: 1 },
 	                      'Rendimiento'
 	                    ),
 	                    _react2['default'].createElement(
 	                      TableHeaderColumn,
-	                      null,
+	                      { key: 2 },
 	                      'Riesgo'
 	                    ),
 	                    _react2['default'].createElement(
 	                      TableHeaderColumn,
-	                      null,
+	                      { key: 3 },
 	                      'Expected'
 	                    ),
-	                    _react2['default'].createElement(TableHeaderColumn, null)
+	                    _react2['default'].createElement(
+	                      TableHeaderColumn,
+	                      { key: 4 },
+	                      'Fuente'
+	                    ),
+	                    _react2['default'].createElement(TableHeaderColumn, { key: 5 })
 	                  )
 	                ),
 	                _react2['default'].createElement(
@@ -28440,6 +28455,15 @@
 	                        (function () {
 	                          return toMoney(profits) + ' (' + (profits / investAmount * 100 - 100).toFixed(2) + '%)';
 	                        })()
+	                      ),
+	                      _react2['default'].createElement(
+	                        TableRowColumn,
+	                        null,
+	                        el.source && _react2['default'].createElement(
+	                          'a',
+	                          { href: el.source },
+	                          'Ver fuente'
+	                        )
 	                      ),
 	                      _react2['default'].createElement(
 	                        TableRowColumn,

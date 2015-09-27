@@ -11,6 +11,14 @@ html {
   position: relative;
 }
 
+a {
+	color: #00bcd4;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 }

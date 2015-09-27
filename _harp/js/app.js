@@ -14,6 +14,6 @@ $(function() {
 
 		var amount = Math.max(firstAmount, secondAmount, 5000);
 
-		location.href = '/invest.html?amount=' + amount;
+		location.href = '/app?amount=' + amount;
 	})
 });
