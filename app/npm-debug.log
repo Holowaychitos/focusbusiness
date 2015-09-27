@@ -2,25 +2,24 @@
 1 verbose cli [ '/usr/local/bin/node',
 1 verbose cli   '/usr/local/bin/npm',
 1 verbose cli   'install',
-1 verbose cli   'react-chartjs',
-1 verbose cli   '--save' ]
+1 verbose cli   'react-chartjs' ]
 2 info using npm@2.14.4
 3 info using node@v4.1.1
-4 verbose install initial load of /Users/javierbyte/Projects/focusbusiness/app/package.json
-5 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/babel-core/package.json
-6 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/babel-loader/package.json
-7 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/fbjs/package.json
-8 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/lodash/package.json
-9 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/material-ui/package.json
-10 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react/package.json
-11 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-dom/package.json
-12 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-hot-loader/package.json
-13 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-tap-event-plugin/package.json
-14 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/standard/package.json
-15 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/webpack/package.json
-16 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/webpack-dev-server/package.json
+4 verbose install initial load of /Users/javierbyte/Projects/focusbusiness/_app/package.json
+5 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/babel-core/package.json
+6 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/babel-loader/package.json
+7 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/fbjs/package.json
+8 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/lodash/package.json
+9 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/material-ui/package.json
+10 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react/package.json
+11 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-dom/package.json
+12 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-hot-loader/package.json
+13 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-tap-event-plugin/package.json
+14 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/standard/package.json
+15 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/webpack/package.json
+16 verbose installManyTop reading scoped package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/webpack-dev-server/package.json
 17 info package.json react-tap-event-plugin@0.1.8 No license field.
-18 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/package.json
+18 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/_app/package.json
 19 silly cache add args [ 'react-chartjs', null ]
 20 verbose cache add spec react-chartjs
 21 silly cache add parsed spec Result {
@@ -40,22 +39,22 @@
 29 verbose addNameRange registry:https://registry.npmjs.org/react-chartjs not in flight; fetching
 30 verbose request uri https://registry.npmjs.org/react-chartjs
 31 verbose request no auth needed
-32 info attempt registry request try #1 at 1:25:40 PM
+32 info attempt registry request try #1 at 1:42:22 PM
 33 verbose request using bearer token for auth
-34 verbose request id e3186daf1301f3c7
+34 verbose request id d8e9ebbc0db36974
 35 verbose etag "9Y2ARZRT5NYWTRFGL9NOSN9DE"
 36 http request GET https://registry.npmjs.org/react-chartjs
 37 http 304 https://registry.npmjs.org/react-chartjs
 38 silly get cb [ 304,
 38 silly get   { 'cache-control': 'max-age=60',
 38 silly get     'accept-ranges': 'bytes',
-38 silly get     date: 'Sun, 27 Sep 2015 18:25:41 GMT',
+38 silly get     date: 'Sun, 27 Sep 2015 18:42:23 GMT',
 38 silly get     via: '1.1 varnish',
 38 silly get     connection: 'keep-alive',
-38 silly get     'x-served-by': 'cache-sjc3135-SJC',
+38 silly get     'x-served-by': 'cache-lax1424-LAX',
 38 silly get     'x-cache': 'MISS',
 38 silly get     'x-cache-hits': '0',
-38 silly get     'x-timer': 'S1443378341.434930,VS0,VE85' } ]
+38 silly get     'x-timer': 'S1443379343.301278,VS0,VE189' } ]
 39 verbose etag https://registry.npmjs.org/react-chartjs from cache
 40 verbose get saving react-chartjs to /Users/javierbyte/.npm/registry.npmjs.org/react-chartjs/.cache.json
 41 silly addNameRange number 2 { name: 'react-chartjs', range: '*', hasData: true }
@@ -111,18 +110,18 @@
 48 silly install resolved     directories: {},
 48 silly install resolved     _resolved: 'https://registry.npmjs.org/react-chartjs/-/react-chartjs-0.6.0.tgz',
 48 silly install resolved     readme: 'ERROR: No README data found!' } ]
-49 info install react-chartjs@0.6.0 into /Users/javierbyte/Projects/focusbusiness/app
+49 info install react-chartjs@0.6.0 into /Users/javierbyte/Projects/focusbusiness/_app
 50 info installOne react-chartjs@0.6.0
-51 verbose installOne of react-chartjs to /Users/javierbyte/Projects/focusbusiness/app not in flight; installing
-52 verbose lock using /Users/javierbyte/.npm/_locks/react-chartjs-8c1215ebf4052eee.lock for /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
-53 silly install write writing react-chartjs 0.6.0 to /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+51 verbose installOne of react-chartjs to /Users/javierbyte/Projects/focusbusiness/_app not in flight; installing
+52 verbose lock using /Users/javierbyte/.npm/_locks/react-chartjs-1550f0d56ca7f0bf.lock for /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs
+53 silly install write writing react-chartjs 0.6.0 to /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs
 54 verbose unbuild node_modules/react-chartjs
-55 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs is being purged from base /Users/javierbyte/Projects/focusbusiness/app
-56 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+55 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs is being purged from base /Users/javierbyte/Projects/focusbusiness/_app
+56 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs
 57 verbose tar unpack /Users/javierbyte/.npm/react-chartjs/0.6.0/package.tgz
-58 verbose tar unpacking to /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
-59 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs is being purged
-60 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+58 verbose tar unpacking to /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs
+59 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs is being purged
+60 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs
 61 silly gunzTarPerm modes [ '755', '644' ]
 62 silly gunzTarPerm extractEntry package.json
 63 silly gunzTarPerm extractEntry .npmignore
@@ -137,9 +136,9 @@
 72 silly gunzTarPerm extractEntry lib/polar-area.js
 73 silly gunzTarPerm extractEntry lib/radar.js
 74 silly gunzTarPerm extractEntry release-notes.md
-75 verbose write writing to /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs/package.json
+75 verbose write writing to /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs/package.json
 76 info preinstall react-chartjs@0.6.0
-77 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs/package.json
+77 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs/package.json
 78 silly prepareForInstallMany adding react@* from react-chartjs peerDependencies
 79 silly prepareForInstallMany adding chart.js@* from react-chartjs peerDependencies
 80 warn peerDependencies The peer dependency react@* included from react-chartjs will no
@@ -148,34 +147,34 @@
 83 warn peerDependencies The peer dependency chart.js@* included from react-chartjs will no
 84 warn peerDependencies longer be automatically installed to fulfill the peerDependency
 85 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
-86 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs/package.json
+86 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs/package.json
 87 silly install resolved []
-88 verbose about to build /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
-89 info build /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
+88 verbose about to build /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs
+89 info build /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs
 90 info linkStuff react-chartjs@0.6.0
-91 silly linkStuff react-chartjs@0.6.0 has /Users/javierbyte/Projects/focusbusiness/app/node_modules as its parent node_modules
+91 silly linkStuff react-chartjs@0.6.0 has /Users/javierbyte/Projects/focusbusiness/_app/node_modules as its parent node_modules
 92 verbose linkBins react-chartjs@0.6.0
 93 verbose linkMans react-chartjs@0.6.0
 94 verbose rebuildBundles react-chartjs@0.6.0
 95 info install react-chartjs@0.6.0
 96 info postinstall react-chartjs@0.6.0
-97 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/package.json
-98 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/babel-core/package.json
-99 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/babel-loader/package.json
-100 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/fbjs/package.json
-101 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/lodash/package.json
-102 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/material-ui/package.json
-103 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react/package.json
-104 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs/package.json
-105 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-dom/package.json
-106 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-hot-loader/package.json
-107 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-tap-event-plugin/package.json
-108 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/standard/package.json
-109 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/webpack/package.json
-110 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/webpack-dev-server/package.json
-111 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/.bin/standard/package.json
-112 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/.bin/webpack/package.json
-113 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/app/node_modules/.bin/webpack-dev-server/package.json
+97 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/_app/package.json
+98 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/babel-core/package.json
+99 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/babel-loader/package.json
+100 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/fbjs/package.json
+101 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/lodash/package.json
+102 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/material-ui/package.json
+103 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react/package.json
+104 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs/package.json
+105 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-dom/package.json
+106 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-hot-loader/package.json
+107 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-tap-event-plugin/package.json
+108 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/standard/package.json
+109 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/webpack/package.json
+110 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/webpack-dev-server/package.json
+111 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/.bin/standard/package.json
+112 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/.bin/webpack/package.json
+113 verbose targetResolver reading package data from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/.bin/webpack-dev-server/package.json
 114 silly cache add args [ 'chart.js@*', null ]
 115 verbose cache add spec chart.js@*
 116 silly cache add parsed spec Result {
@@ -193,10 +192,10 @@
 122 silly mapToRegistry registry https://registry.npmjs.org/
 123 silly mapToRegistry uri https://registry.npmjs.org/chart.js
 124 verbose addNameRange registry:https://registry.npmjs.org/chart.js not in flight; fetching
-125 verbose already installed skipping react@* /Users/javierbyte/Projects/focusbusiness/app
+125 verbose already installed skipping react@* /Users/javierbyte/Projects/focusbusiness/_app
 126 verbose request uri https://registry.npmjs.org/chart.js
 127 verbose request no auth needed
-128 info attempt registry request try #1 at 1:25:41 PM
+128 info attempt registry request try #1 at 1:42:23 PM
 129 verbose request using bearer token for auth
 130 verbose etag "AHR75JAAFDM3ARBDP0S8NKL2X"
 131 http request GET https://registry.npmjs.org/chart.js
@@ -204,13 +203,13 @@
 133 silly get cb [ 304,
 133 silly get   { 'cache-control': 'max-age=60',
 133 silly get     'accept-ranges': 'bytes',
-133 silly get     date: 'Sun, 27 Sep 2015 18:25:41 GMT',
+133 silly get     date: 'Sun, 27 Sep 2015 18:42:23 GMT',
 133 silly get     via: '1.1 varnish',
 133 silly get     connection: 'keep-alive',
-133 silly get     'x-served-by': 'cache-sjc3127-SJC',
+133 silly get     'x-served-by': 'cache-lax1431-LAX',
 133 silly get     'x-cache': 'MISS',
 133 silly get     'x-cache-hits': '0',
-133 silly get     'x-timer': 'S1443378341.884321,VS0,VE87' } ]
+133 silly get     'x-timer': 'S1443379343.837946,VS0,VE75' } ]
 134 verbose etag https://registry.npmjs.org/chart.js from cache
 135 verbose get saving chart.js to /Users/javierbyte/.npm/registry.npmjs.org/chart.js/.cache.json
 136 silly addNameRange number 2 { name: 'chart.js', range: '*', hasData: true }
@@ -257,18 +256,18 @@
 143 silly install resolved     directories: {},
 143 silly install resolved     _resolved: 'https://registry.npmjs.org/chart.js/-/chart.js-1.0.2.tgz',
 143 silly install resolved     readme: 'ERROR: No README data found!' } ]
-144 info install chart.js@1.0.2 into /Users/javierbyte/Projects/focusbusiness/app
+144 info install chart.js@1.0.2 into /Users/javierbyte/Projects/focusbusiness/_app
 145 info installOne chart.js@1.0.2
-146 verbose installOne of chart.js to /Users/javierbyte/Projects/focusbusiness/app not in flight; installing
-147 verbose lock using /Users/javierbyte/.npm/_locks/chart-js-b7fcb955f1a1d0c6.lock for /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
-148 silly install write writing chart.js 1.0.2 to /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+146 verbose installOne of chart.js to /Users/javierbyte/Projects/focusbusiness/_app not in flight; installing
+147 verbose lock using /Users/javierbyte/.npm/_locks/chart-js-dd99c74a5de14ac0.lock for /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js
+148 silly install write writing chart.js 1.0.2 to /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js
 149 verbose unbuild node_modules/chart.js
-150 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js is being purged from base /Users/javierbyte/Projects/focusbusiness/app
-151 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+150 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js is being purged from base /Users/javierbyte/Projects/focusbusiness/_app
+151 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js
 152 verbose tar unpack /Users/javierbyte/.npm/chart.js/1.0.2/package.tgz
-153 verbose tar unpacking to /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
-154 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js is being purged
-155 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+153 verbose tar unpacking to /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js
+154 silly gentlyRm /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js is being purged
+155 verbose gentlyRm don't care about contents; nuking /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js
 156 silly gunzTarPerm modes [ '755', '644' ]
 157 silly gunzTarPerm extractEntry package.json
 158 silly gunzTarPerm extractEntry .npmignore
@@ -302,23 +301,23 @@
 186 silly gunzTarPerm extractEntry samples/radar.html
 187 silly gunzTarPerm extractEntry LICENSE.md
 188 silly gunzTarPerm extractEntry bower.json
-189 verbose write writing to /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js/package.json
+189 verbose write writing to /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js/package.json
 190 info preinstall chart.js@1.0.2
-191 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js/package.json
-192 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js/package.json
+191 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js/package.json
+192 verbose readDependencies loading dependencies from /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js/package.json
 193 silly install resolved []
-194 verbose about to build /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
-195 info build /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
+194 verbose about to build /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js
+195 info build /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js
 196 info linkStuff chart.js@1.0.2
-197 silly linkStuff chart.js@1.0.2 has /Users/javierbyte/Projects/focusbusiness/app/node_modules as its parent node_modules
+197 silly linkStuff chart.js@1.0.2 has /Users/javierbyte/Projects/focusbusiness/_app/node_modules as its parent node_modules
 198 verbose linkBins chart.js@1.0.2
 199 verbose linkMans chart.js@1.0.2
 200 verbose rebuildBundles chart.js@1.0.2
 201 info install chart.js@1.0.2
 202 info postinstall chart.js@1.0.2
-203 verbose unlock done using /Users/javierbyte/.npm/_locks/chart-js-b7fcb955f1a1d0c6.lock for /Users/javierbyte/Projects/focusbusiness/app/node_modules/chart.js
-204 verbose unlock done using /Users/javierbyte/.npm/_locks/react-chartjs-8c1215ebf4052eee.lock for /Users/javierbyte/Projects/focusbusiness/app/node_modules/react-chartjs
-205 verbose validateInstall loading /Users/javierbyte/Projects/focusbusiness/app/package.json for validation
+203 verbose unlock done using /Users/javierbyte/.npm/_locks/chart-js-dd99c74a5de14ac0.lock for /Users/javierbyte/Projects/focusbusiness/_app/node_modules/chart.js
+204 verbose unlock done using /Users/javierbyte/.npm/_locks/react-chartjs-1550f0d56ca7f0bf.lock for /Users/javierbyte/Projects/focusbusiness/_app/node_modules/react-chartjs
+205 verbose validateInstall loading /Users/javierbyte/Projects/focusbusiness/_app/package.json for validation
 206 verbose stack Error: The package react@0.14.0-rc1 does not satisfy its siblings' peerDependencies requirements!
 206 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
 206 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
@@ -330,9 +329,9 @@
 206 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
 206 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
 206 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
-207 verbose cwd /Users/javierbyte/Projects/focusbusiness/app
+207 verbose cwd /Users/javierbyte/Projects/focusbusiness/_app
 208 error Darwin 15.0.0
-209 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "react-chartjs" "--save"
+209 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "react-chartjs"
 210 error node v4.1.1
 211 error npm  v2.14.4
 212 error code EPEERINVALID
