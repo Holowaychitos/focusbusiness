@@ -9,14 +9,11 @@ $(function() {
 	$('[data-start-now]').on('click', function() {
 		dispatch('register-first');
 
-		window.setTimeout(function() {
-			if (Math.random() > 0.5) {
-				dispatch('register-second');
-			}
-		}, 500);
+		var firstAmount = parseInt($('[data-start-amount]')[0].value, 10) || 0;
+		var secondAmount = parseInt($('[data-start-amount]')[1].value, 10) || 0;
 
-		$('[data-start-now]').each(function() {
-			$(this).replaceWith('Oops... aún no estamos listos. ¡Gracias por mostrar interés!');
-		});
+		var amount = Math.max(firstAmount, secondAmount, 5000);
+
+		location.href = '/invest.html?amount=' + amount;
 	})
 });

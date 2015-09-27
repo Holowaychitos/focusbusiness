@@ -4,7 +4,11 @@ div.main
 			h1 focus.business
 			h3 Te ayudamos a invertir de forma más inteligente.
 			br
-			button(data-start-now).button-big.margin-bottom-1x Comienza ahora
+			br
+			div.flex.input-blend
+				input(data-start-amount,type='number', min=5000, step=100, placeholder='¿Cuánto quieres invertir?').flex-1
+				button(data-start-now).margin-bottom-1x Comienza ahora
+			div.help Desde 5 mil pesos, ¡Conoce tus opciones de forma gratuita!
 	div
 		div.section: div.content.padding-1x.flex.flex-content-center
 			div.padding-1x.flex-1
@@ -79,7 +83,9 @@ div.main
 				h1 ¿Te interesa?
 				h3 Empieza a invertir de forma más inteligente.
 				br
-				button(data-start-now).button-extra-big Comienza ahora
+				div.flex.input-blend.margin-center
+					input(data-start-amount,type='number', min=5000, step=100, placeholder='¿Cuánto quieres invertir?').flex-1
+					button(data-start-now).margin-bottom-1x Comienza ahora
 				br
 				br
 				br

@@ -26,6 +26,12 @@ h1, h2, h3, h4 {
     min-height: 61.8vh;
   }
 
+  &.-small {
+    .content {
+      min-height: 0;
+    }
+  }
+
   .text-shadow;
 }
 
@@ -66,7 +72,6 @@ button {
   background: @green-color;
   color: #FFF;
   text-shadow: rgba(0, 0, 0, 0.1) 0 -1px 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
   cursor: pointer;
 
   &:hover {
@@ -136,6 +141,16 @@ button {
   }
 }
 
+input {
+  background: #eee;
+
+  &:focus {
+    background: #fff;
+    outline: none;
+
+  }
+}
+
 .txt-xxl {
   font-size: 3em;
 }
@@ -147,6 +162,40 @@ button {
 }
 .txt-g {
   font-size: 1.125em;
+}
+
+.help {
+  opacity: .5;
+  font-size:.8em;
+  padding: 1em 2em;
+}
+
+.margin-center {
+  margin: 0 auto;
+}
+
+.input-blend {
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+  border-radius: 2em;
+  width: 100%;
+  max-width: 61.8%;
+
+  input, button {
+    width: auto;
+    font-size: 1.25em;
+    padding: 1em 1.5em;
+  }
+
+  input {
+    border: 0;
+    border-radius: 2em 0 0 2em;
+  }
+
+  button {
+    border: 0;
+    padding: 1em 1.5em 1em 1.25em;
+    border-radius: 0 2em 2em 0;
+  }
 }
 
 .animation-delay-1 {
