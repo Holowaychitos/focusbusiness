@@ -9,10 +9,11 @@ $(function() {
 	$('[data-start-now]').on('click', function() {
 		dispatch('register-first');
 
-		var amount = Math.max(parseInt($('[data-start-amount]')[0].val(), 10), parseInt($('[data-start-amount]')[1].val(), 10));
+		var firstAmount = parseInt($('[data-start-amount]')[0].value, 10) || 0;
+		var secondAmount = parseInt($('[data-start-amount]')[1].value, 10) || 0;
 
-		console.warn(amount);
+		var amount = Math.max(firstAmount, secondAmount, 5000);
 
-		// location.href = '/invest.html?amount=' + ;
+		location.href = '/invest.html?amount=' + amount;
 	})
 });
