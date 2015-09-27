@@ -28182,6 +28182,7 @@
 	injectTapEventPlugin();
 	
 	if (window.mixpanel) {
+	  console.info('Mixpanel is working');
 	  window.mixpanel.track('pageview');
 	  window.mixpanel.track('register-first');
 	}
