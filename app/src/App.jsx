@@ -160,6 +160,12 @@ export const App = React.createClass({
     })
   },
 
+  onInterest () {
+    if (window.mixpanel) {
+      window.mixpanel.track('interest')
+    }
+  },
+
   render () {
     var investAmount = parseInt(this.state.investAmount || 0, 10)
     var investTerm = parseInt(this.state.investTerm || 0, 10)

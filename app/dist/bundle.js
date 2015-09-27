@@ -28324,6 +28324,12 @@
 	    });
 	  },
 	
+	  onInterest: function onInterest() {
+	    if (window.mixpanel) {
+	      window.mixpanel.track('interest');
+	    }
+	  },
+	
 	  render: function render() {
 	    var investAmount = parseInt(this.state.investAmount || 0, 10);
 	    var investTerm = parseInt(this.state.investTerm || 0, 10);
