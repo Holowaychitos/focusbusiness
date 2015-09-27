@@ -62,14 +62,14 @@ var tableData = [{
   performancePercent: 7,
   minAmount: 1000,
   minTerm: 6,
-  risk: 0.2,
+  risk: 0.3,
   category: 'Prestamos'
 }, {
   name: 'CETES',
   performancePercent: 3,
   minAmount: 1000,
   minTerm: 6,
-  risk: 0.3,
+  risk: 0.05,
   category: 'Prestamos'
 }]
 
@@ -82,11 +82,11 @@ var termOptions = [
 ]
 
 var outcomeOptions = [
-  { payload: '0.5', text: 'Excelente' },
-  { payload: '0.25', text: 'Bueno' },
+  { payload: '0.3', text: 'Excelente' },
+  { payload: '0.15', text: 'Bueno' },
   { payload: '0', text: 'Promedio' },
-  { payload: '-0.25', text: 'Malo' },
-  { payload: '-0.5', text: 'Pésimo' }
+  { payload: '-0.15', text: 'Malo' },
+  { payload: '-0.3', text: 'Pésimo' }
 ]
 
 function toMoney (val) {
@@ -105,7 +105,7 @@ function getResults (amount, performance, term, risk, outcome) {
   var riskVariation = (Math.pow(-1, term + Math.floor(risk * 10)) * risk) / 100 + 1
   riskVariation = 1
 
-  return (amount * Math.pow((performance / 100 + 1), term)) * riskFactor * riskVariation
+  return (amount * Math.pow((performance / 100 + 1), term / 12)) * riskFactor * riskVariation
 }
 
 export const App = React.createClass({
