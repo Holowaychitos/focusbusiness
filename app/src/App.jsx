@@ -169,6 +169,7 @@ export const App = React.createClass({
   onInterest () {
     window.alert('Gracias por tu interés! Aún no estamos funcionando, pero pronto sabrás más de nosotros.')
 
+    console.log('tracked interest BEFORE')
     if (window.mixpanel) {
       window.mixpanel.track('interest')
       console.log('tracked interest')
