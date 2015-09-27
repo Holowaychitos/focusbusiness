@@ -5,6 +5,11 @@ var injectTapEventPlugin = require('react-tap-event-plugin')
 
 injectTapEventPlugin()
 
+if (window.mixpanel) {
+  window.mixpanel.track('pageview')
+  window.mixpanel.track('register-first')
+}
+
 const monthNames = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
 monthNames.push(...monthNames)
 monthNames.push(...monthNames)
@@ -161,6 +166,8 @@ export const App = React.createClass({
   },
 
   onInterest () {
+    window.alert('Gracias por tu interés! Aún no estamos funcionando, pero pronto sabrás más de nosotros.')
+
     if (window.mixpanel) {
       window.mixpanel.track('interest')
     }
@@ -244,7 +251,7 @@ export const App = React.createClass({
                           {el.source && <a href={el.source}>Ver fuente</a>}
                         </TableRowColumn>
                         <TableRowColumn>
-                          <RaisedButton label='Me interesa' />
+                          <RaisedButton onClick={this.onInterest} label='Me interesa' />
                         </TableRowColumn>
                       </TableRow>
                     )

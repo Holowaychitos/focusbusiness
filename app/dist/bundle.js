@@ -28181,6 +28181,11 @@
 	
 	injectTapEventPlugin();
 	
+	if (window.mixpanel) {
+	  window.mixpanel.track('pageview');
+	  window.mixpanel.track('register-first');
+	}
+	
 	var monthNames = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
 	monthNames.push.apply(monthNames, monthNames);
 	monthNames.push.apply(monthNames, monthNames);
@@ -28325,12 +28330,16 @@
 	  },
 	
 	  onInterest: function onInterest() {
+	    window.alert('Gracias por tu interés! Aún no estamos funcionando, pero pronto sabrás más de nosotros.');
+	
 	    if (window.mixpanel) {
 	      window.mixpanel.track('interest');
 	    }
 	  },
 	
 	  render: function render() {
+	    var _this = this;
+	
 	    var investAmount = parseInt(this.state.investAmount || 0, 10);
 	    var investTerm = parseInt(this.state.investTerm || 0, 10);
 	    var outcome = parseFloat(this.state.outcome || 0);
@@ -28474,7 +28483,7 @@
 	                      _react2['default'].createElement(
 	                        TableRowColumn,
 	                        null,
-	                        _react2['default'].createElement(RaisedButton, { label: 'Me interesa' })
+	                        _react2['default'].createElement(RaisedButton, { onClick: _this.onInterest, label: 'Me interesa' })
 	                      )
 	                    );
 	                  })
