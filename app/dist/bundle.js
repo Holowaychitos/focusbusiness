@@ -28335,6 +28335,7 @@
 	
 	    if (window.mixpanel) {
 	      window.mixpanel.track('interest');
+	      console.log('tracked interest');
 	    }
 	  },
 	

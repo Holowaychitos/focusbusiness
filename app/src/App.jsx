@@ -171,6 +171,7 @@ export const App = React.createClass({
 
     if (window.mixpanel) {
       window.mixpanel.track('interest')
+      console.log('tracked interest')
     }
   },
 
