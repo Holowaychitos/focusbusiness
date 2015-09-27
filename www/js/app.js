@@ -4,6 +4,8 @@ function dispatch(label, optional) {
 }
 
 function goToApp() {
+	event.preventDefault();
+
 	dispatch('register-first');
 
 	var firstAmount = parseInt($('[data-start-amount]')[0].value, 10) || 0;
