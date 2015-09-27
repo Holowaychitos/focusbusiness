@@ -5,6 +5,11 @@ var injectTapEventPlugin = require('react-tap-event-plugin')
 
 injectTapEventPlugin()
 
+const monthNames = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
+monthNames.push(...monthNames)
+monthNames.push(...monthNames)
+monthNames.push(...monthNames)
+
 const RaisedButton = require('material-ui/lib/raised-button')
 const AppBar = require('material-ui/lib/app-bar')
 // const Checkbox = require('material-ui/lib/checkbox')
@@ -136,9 +141,7 @@ export const App = React.createClass({
     var investTerm = parseInt(this.state.investTerm || 0, 10)
     var outcome = parseFloat(this.state.outcome || 0)
 
-    var months = _.fill(Array(investTerm), ':D')
-
-    console.warn({months})
+    var months = monthNames.slice(9, 9 + investTerm)
 
     return (
       <div>
