@@ -28243,14 +28243,16 @@
 	  minTerm: 7,
 	  risk: 0.3,
 	  category: 'Banco',
-	  source: 'http://www.hsbc.com.mx/1/2/es/hsbc-premier/productos/inversiones-plazo/simulador-plazo'
+	  source: 'http://www.hsbc.com.mx/1/2/es/hsbc-premier/productos/inversiones-plazo/simulador-plazo',
+	  color: '151,187,220'
 	}, {
 	  name: 'Uber',
 	  performancePercent: 9,
 	  minAmount: 120000,
 	  minTerm: 6,
 	  risk: 1,
-	  category: 'Alto riesgo'
+	  category: 'Alto riesgo',
+	  color: '187,151,220'
 	}, {
 	  name: 'Yotepresto',
 	  performancePercent: 10.5,
@@ -28258,7 +28260,8 @@
 	  minTerm: 6,
 	  risk: 0.65,
 	  category: 'Prestamos',
-	  source: 'https://www.yotepresto.com/es/quiero-prestar?id=4'
+	  source: 'https://www.yotepresto.com/es/quiero-prestar?id=4',
+	  color: '151,220,187'
 	}, {
 	  name: 'CETES',
 	  performancePercent: 3.71,
@@ -28266,7 +28269,8 @@
 	  minTerm: 6,
 	  risk: 0.08,
 	  category: 'Prestamos',
-	  source: 'http://www.cetesdirecto.com/servlet/cetes/productos'
+	  source: 'http://www.cetesdirecto.com/servlet/cetes/productos',
+	  color: '220,151,187'
 	}];
 	
 	var termOptions = [{ payload: 3, text: '3 meses' }, { payload: 6, text: '6 meses' }, { payload: 12, text: '12 meses' }, { payload: 24, text: '24 meses' }, { payload: 36, text: '36 meses' }, { payload: 60, text: '5 años' }];
@@ -28458,6 +28462,7 @@
 	                      _react2['default'].createElement(
 	                        TableRowColumn,
 	                        null,
+	                        _react2['default'].createElement('div', { className: 'circle', style: { background: 'rgb(' + el.color + ')' } }),
 	                        el.name
 	                      ),
 	                      _react2['default'].createElement(
@@ -28505,9 +28510,9 @@
 	                  datasets: _lodash2['default'].map(tableData, function (invest) {
 	                    return {
 	                      label: invest.name,
-	                      fillColor: 'rgba(151,187,205,0.2)',
-	                      strokeColor: 'rgba(151,187,205,1)',
-	                      pointColor: 'rgba(151,187,205,1)',
+	                      fillColor: 'rgba(' + invest.color + ',0.1)',
+	                      strokeColor: 'rgba(' + invest.color + ',1)',
+	                      pointColor: 'rgba(' + invest.color + ',1)',
 	                      pointStrokeColor: '#fff',
 	                      pointHighlightFill: '#fff',
 	                      pointHighlightStroke: 'rgba(220,220,220,1)',

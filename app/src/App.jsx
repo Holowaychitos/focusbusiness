@@ -67,14 +67,16 @@ var tableData = [{
   minTerm: 7,
   risk: 0.3,
   category: 'Banco',
-  source: 'http://www.hsbc.com.mx/1/2/es/hsbc-premier/productos/inversiones-plazo/simulador-plazo'
+  source: 'http://www.hsbc.com.mx/1/2/es/hsbc-premier/productos/inversiones-plazo/simulador-plazo',
+  color: '151,187,220'
 }, {
   name: 'Uber',
   performancePercent: 9,
   minAmount: 120000,
   minTerm: 6,
   risk: 1,
-  category: 'Alto riesgo'
+  category: 'Alto riesgo',
+  color: '187,151,220'
 }, {
   name: 'Yotepresto',
   performancePercent: 10.5,
@@ -82,7 +84,8 @@ var tableData = [{
   minTerm: 6,
   risk: 0.65,
   category: 'Prestamos',
-  source: 'https://www.yotepresto.com/es/quiero-prestar?id=4'
+  source: 'https://www.yotepresto.com/es/quiero-prestar?id=4',
+  color: '151,220,187'
 }, {
   name: 'CETES',
   performancePercent: 3.71,
@@ -90,7 +93,8 @@ var tableData = [{
   minTerm: 6,
   risk: 0.08,
   category: 'Prestamos',
-  source: 'http://www.cetesdirecto.com/servlet/cetes/productos'
+  source: 'http://www.cetesdirecto.com/servlet/cetes/productos',
+  color: '220,151,187'
 }]
 
 var termOptions = [
@@ -247,7 +251,10 @@ export const App = React.createClass({
 
                     return (
                       <TableRow key={index}>
-                        <TableRowColumn>{el.name}</TableRowColumn>
+                        <TableRowColumn>
+                          <div className='circle' style={{background: 'rgb(' + el.color + ')'}}/>
+                          {el.name}
+                        </TableRowColumn>
                         <TableRowColumn>{el.performancePercent}%</TableRowColumn>
                         <TableRowColumn>{getRiskLabel(el.risk)}</TableRowColumn>
                         <TableRowColumn>{(() => {
@@ -275,9 +282,9 @@ export const App = React.createClass({
                   datasets: _.map(tableData, (invest) => {
                     return {
                       label: invest.name,
-                      fillColor: 'rgba(151,187,205,0.2)',
-                      strokeColor: 'rgba(151,187,205,1)',
-                      pointColor: 'rgba(151,187,205,1)',
+                      fillColor: 'rgba(' + invest.color + ',0.1)',
+                      strokeColor: 'rgba(' + invest.color + ',1)',
+                      pointColor: 'rgba(' + invest.color + ',1)',
                       pointStrokeColor: '#fff',
                       pointHighlightFill: '#fff',
                       pointHighlightStroke: 'rgba(220,220,220,1)',
